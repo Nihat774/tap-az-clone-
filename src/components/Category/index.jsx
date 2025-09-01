@@ -1,20 +1,10 @@
+import { categories } from "@/constants/categories";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 function Category() {
-  const categories = [
-    { id: 1, image: "/Category-images/neqliyyat.png", text: "Nəqliyyat", path: "" },
-    { id: 2, image: "/Category-images/ev-bag.png", text: "Ev və bağ üçün", path: "" },
-    { id: 3, image: "/Category-images/elektronika.png", text: "Elektronika", path: "" },
-    { id: 4, image: "/Category-images/usaqlar.png", text: "Uşaqlar aləmi", path: "" },
-    { id: 5, image: "/Category-images/dasinmaz-emlak.png", text: "Daşınmaz əmlak", path: "" },
-    { id: 6, image: "/Category-images/xidmetler-biznes.png", text: "Xidmətlər və biznes", path: "" },
-    { id: 7, image: "/Category-images/wexsi-esyalar.png", text: "Şəxsi əşyalar", path: "" },
-    { id: 8, image: "/Category-images/hobbi-asude.png", text: "Hobbi və asudə", path: "" },
-    { id: 9, image: "/Category-images/heyvanlar.png", text: "Heyvanlar", path: "" },
-    { id: 10, image: "/Category-images/is.png", text: "İş elanları", path: "" },
-  ];
+
 
   return (
     <section

@@ -6,43 +6,10 @@ import Link from "next/link";
 import { SlGlobe } from "react-icons/sl";
 import { FaFacebookF, FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import { IoCloseOutline } from "react-icons/io5";
+import { navLink1, navLink2 } from "@/constants/navLinks";
 
 function NavbarIcon() {
   const [isOpen, setIsOpen] = useState(false);
-  const navLink1 = [
-    {
-      path: "",
-      text: "Mağazalar",
-    },
-    {
-      path: "",
-      text: "Yardım",
-    },
-    {
-      path: "",
-      text: "Biznes",
-    },
-  ];
-
-  const navLink2 = [
-    {
-      path: "",
-      text: "Layihə haqqında",
-    },
-    {
-      path: "",
-      text: "Istifadçi razılaşması",
-    },
-    {
-      path: "",
-      text: "Məxfilik siyasəti",
-    },
-    {
-      path: "",
-      text: "Reklam yerləşdirin",
-    },
-  ];
-
   return (
     <>
       <nav>
@@ -59,7 +26,7 @@ function NavbarIcon() {
         )}
         {isOpen ? (
           <>
-            <div className="z-40 bg-white flex md:flex-row flex-col justify-between p-5 md:-mx-[30px] md:px-[160px] py-[30px] border-y border-neutral-200 h-[100vh] md:h-[40vh] w-[80%] md:w-full absolute top-0 left-0 md:top-[12vh]">
+            <div className="z-40 bg-white flex md:flex-row flex-col justify-between p-5 md:-mx-[30px] md:px-[160px] py-[30px] border-y border-neutral-200 h-[100vh] md:h-[40vh] w-[80%] md:w-[101vw] absolute top-0 left-0 md:top-[12vh]">
               <div className="md:hidden flex justify-between">
                 <Link
                   href="/"

@@ -6,25 +6,20 @@ import { AiOutlineMessage } from "react-icons/ai";
 import { RxPlusCircled } from "react-icons/rx";
 import NavbarIcon from "../Navbar";
 import { FaCirclePlus } from "react-icons/fa6";
+import Catalog from "../Catalog";
 
 function Header() {
   return (
     <header className="px-[12px] md:px-[30px] py-[12px] flex items-center justify-between z-50 sticky top-0 bg-white">
       <div className="flex gap-3 md:w-fit w-[60%] justify-between items-center cursor-pointer">
         <NavbarIcon />
-        <Link href="/" className="text-[25px] font-bold text-orange-500">
+        <Link href="/" className="text-[25px] font-bold text-orange-600">
           tap.az
         </Link>
       </div>
 
       <div className="hidden md:flex items-center gap-4">
-        <Link
-          href="#"
-          className="bg-orange-500 hover:bg-orange-600 duration-300 rounded-[14px] flex items-center justify-center py-[10px] px-[15px] gap-2"
-        >
-          <FaThLarge className="text-white" />
-          <p className="text-white">Kataloq</p>
-        </Link>
+        <Catalog />
         <Search />
       </div>
 

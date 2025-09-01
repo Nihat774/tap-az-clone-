@@ -51,7 +51,7 @@ function Favorite() {
               <Link
                 href={item.path}
                 key={item.id}
-                className=" relative rounded-md flex flex-col gap-1 hover:shadow-md hover:shadow-neutral-400 duration-300"
+                className="h-fit relative rounded-md flex flex-col gap-1 hover:shadow-md hover:shadow-neutral-400 duration-300"
               >
                 <Image
                   src={item.img}
@@ -61,7 +61,7 @@ function Favorite() {
                   className="rounded-md w-full h-[30vh] md:w-[17vw] md:h-[30vh] "
                 />
                 {item.status ? (
-                  <p className="absolute bg-blue-500 rounded-lg text-[16px] px-3 py-1 bottom-[34vw] md:bottom-[7.5vw] left-2 text-white z-5">
+                  <p className="absolute bg-blue-500 rounded-lg text-[16px] px-3 py-1 bottom-[26vw] md:bottom-[7.8vw] left-2 text-white z-5">
                     {item.status}
                   </p>
                 ) : null}
